@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <?php
-$clantag = "#JYL8CYVL";
-$token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjRlMGQ5ODdlLWFjZjItNGJiZC04MTIxLWMwMGNlNDEwYzU3MiIsImlhdCI6MTU5OTc2MTQ4NCwic3ViIjoiZGV2ZWxvcGVyLzVkZjdhMzE2LTkwZjktZWFhYy0zZTZiLTZlOWY1NDdhYmYwNSIsInNjb3BlcyI6WyJjbGFzaCJdLCJsaW1pdHMiOlt7InRpZXIiOiJkZXZlbG9wZXIvc2lsdmVyIiwidHlwZSI6InRocm90dGxpbmcifSx7ImNpZHJzIjpbIjExMS45MS4xNS45OCJdLCJ0eXBlIjoiY2xpZW50In1dfQ.RCrdLqNpdhe4EWK23kjLyzeMleKzSZ_SNvLa7_vt7-f-Pxe69Jy8HSvr9hZijCInA3EkYkFHQbv6Ykv39v4GdQ";
+$clantag = "#CLANTAG";
+$token = "#TOKEN";
 $url = "https://api.clashofclans.com/v1/clans/" . urlencode($clantag);
 $ch = curl_init($url);
 $headr = array();
@@ -23,7 +23,7 @@ if (isset($data["reason"])) {
 }
 $members = $data["memberList"];
 ?>
-    <title>Indian Immortls</title>
+    <title>#</title>
     <link rel="shortcut icon" href="img/icons/icon.png">
     <link rel="stylesheet" href="css/main.css" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
