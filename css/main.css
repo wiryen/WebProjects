@@ -1,0 +1,223 @@
+body {
+    background-color: #1c1f22;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: whitesmoke;
+}
+
+.container {
+    display: flexbox;
+    //color: #e53232;
+}
+
+.clanTitle {
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #e53232;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.clanTag {
+    margin-top: 5px;
+}
+
+.dataParent {
+    padding: 20px;
+    align-content: center;
+}
+
+.dataBox {
+    display: inline-block;
+    border: 1px solid #e53232;
+    border-radius: 2px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px;
+    text-transform: capitalize;
+
+}
+
+footer {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding-top: 10px;
+    scroll-padding-bottom: 10px;
+    color: #e53232;
+
+}
+
+a {
+    text-decoration: none;
+    color: #e53232;
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+}
+
+
+th {
+    color: white;
+    font-weight: bold;
+}
+
+td,
+th {
+    text-align: center;
+
+    font-size: 17px;
+    border: 2px solid whitesmoke;
+    padding: 12px;
+    text-transform: capitalize;
+}
+
+/*
+#dataTable {
+    color: white;
+    overflow-x: auto;
+    display: block;
+    padding: 30px;
+    ;
+}
+
+#dataTable table {
+    border: 2px solid whitesmoke;
+    width: 70%;
+    border-collapse: collapse;
+}
+
+#dataTable th,
+#dataTable td {
+    text-align: center;
+
+    font-size: 17px;
+    border: 2px solid whitesmoke;
+    padding: 12px;
+    text-transform: capitalize;
+}
+
+#dataTable tr td {
+
+    //border: 2px solid #3d3d3d;
+    //border-radius: 2px;
+    color: whitesmoke;
+}
+
+#dataTable tr.header,
+#dataTable td:hover {
+
+    color: #e53232;
+}
+
+#dataTable tr.header {
+    color: white;
+}
+*/
+::-moz-selection {
+    /* Code for Firefox */
+    color: white;
+    background: #000000;
+    ;
+}
+
+::selection {
+    color: white;
+    background: #000000;
+}
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+
+    /* Force table to not be like tables anymore */
+    table {
+        width: 90%;
+        border-collapse: collapse;
+    }
+
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+
+    }
+
+    tr {
+        border: 2px solid #ccc;
+    }
+
+    td {
+        /* Behave  like a "row" */
+        border: none;
+        //border-right: 2px solid whitesmoke;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    /*
+	Label the data
+	*/
+    td:nth-of-type(1):before {
+        content: "#";
+    }
+
+    td:nth-of-type(2):before {
+        content: "League";
+    }
+
+    td:nth-of-type(3):before {
+        content: "Exp";
+    }
+
+    td:nth-of-type(4):before {
+        content: "In Game Name";
+    }
+
+    td:nth-of-type(5):before {
+        content: "Donated";
+    }
+
+    td:nth-of-type(6):before {
+        content: "Received";
+    }
+
+    td:nth-of-type(7):before {
+        content: "Trophies";
+    }
+
+    td:nth-of-type(8):before {
+        content: "Versus Trophies";
+    }
+
+}
+
+.my-class .bar {
+    background: #ccc;
+}
